@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Formu</title>
+    <style>
+        /* Temel stil ayarları */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 30;
+            padding: 30;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 75px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        /* Form stil ayarları */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 10px;
+        }
+        input[type="text"],
+        input[type="password"] {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 7px solid #ccc;
+            border-radius: 17px;
+        }
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 17px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Giriş Formu</h2>
+        <form action="giris.php" method="POST">
+            <label for="kullaniciAdi">Kullanıcı Adı:</label>
+            <input type="text" id="kullaniciAdi" name="kullaniciAdi" required>
+            
+            <label for="sifre">Şifre:</label>
+            <input type="password" id="sifre" name="sifre" required>
+            
+            <input type="submit" value="Giriş Yap">
+        </form>
+    </div>
+</body>
+</html>
